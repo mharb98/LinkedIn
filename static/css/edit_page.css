@@ -1,0 +1,32 @@
+.page-content {
+    text-align: center;
+}
+
+.form {
+    margin: auto;
+    width: 34%;
+    height: 450px;
+}
+
+img {
+    margin: 0;
+}
+
+.middle-page-logo {
+    margin: 25px auto;
+}
+
+table {
+    padding-top: 20px;
+    text-align: center;
+}
+
+td {
+    margin-left: 25px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+tr {
+    margin-bottom: 5px;
+}

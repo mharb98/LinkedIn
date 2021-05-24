@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Staff Member</title>
+        <link rel="icon" href="./static/images/tabpic.png" type="image/png" sizes="16x16"> 
+        <link rel="stylesheet" href="./static/css/login.css">
+    </head>
+    <body>
+        <img src="./static/images/logo.png" alt="Logo">
+        <div class="form">
+            <form method="POST" action="./dynamic/php/addMember.php" id="add">
+                <div class="empty">
+
+                </div>
+                <label for="memberEmail">Email</label>
+                <input type="email" placeholder="E-mail" style="margin-left: 48px;" name="memberEmail" id="memberEmail" required>
+                <br>
+                <br>
+                <input type="submit" value="Add" name="add">
+            </form>
+            <p style="margin-left: 10%;"><a href="profile_user.html">Back to profile...</a></p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./static/scripts/addMember.js"></script>
+    </body>
+</html>

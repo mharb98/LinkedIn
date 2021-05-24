@@ -1,0 +1,60 @@
+:root{
+    --font-family-sans-serif:"Segoe UI","Helvetica Neue",Arial,sans-serif,
+    "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace:"Liberation Mono","Courier New",monospace}*,
+    ::after{box-sizing:border-box}
+    figure,section{display:block}
+        body{margin:0;
+            font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size:1rem;
+            font-weight:400;
+            line-height:1.5;
+            color:#212529;
+            text-align:left;
+            background-color:#fff}
+        h5{margin-top:0;
+            margin-bottom:.5rem}
+        p{margin-top:0;
+            margin-bottom:1rem}
+        a{color:#007bff;
+                text-decoration:none;
+                background-color:transparent;}
+        a:hover{color:#007bff;
+            text-decoration:underline}
+        figure{margin:0 0 1rem}
+        img{vertical-align:middle;
+            border-style:none}
+        button:focus{outline:1px dotted;
+                outline:5px auto }
+        button{background-color: #088dcd;}
+        button,textarea{margin:0;
+            font-family:inherit;
+            font-size:inherit;
+            line-height:inherit}
+        .list-inline{padding-left:0;
+            list-style:none}
+        .posts-1{margin: auto;
+             width: 60%;
+             padding: 10px;
+             position:relative;}
+        .posts{-ms-flex-preferred-size:0;
+            flex-basis:0;
+            -webkit-box-flex:1;
+            -ms-flex-positive:1;
+            flex-grow:1;
+            max-width:100%}
+        .posts-1{-webkit-box-flex:0;
+                -ms-flex:0 0 50%;
+                flex:0 0 50%;
+                max-width:50% }
+
+        .hidden {position:absolute;visibility:hidden;opacity:0;}
+        input[type=checkbox] + label {
+            color: rgb(0, 0, 0);
+            font-style: normal;} 
+        input[type=checkbox]:checked + label {
+            color: rgb(0, 132, 255);
+            font-style: normal;}
+        .container i{font-size: 1.5rem;
+            transition: .4s;
+        }

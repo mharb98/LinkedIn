@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="icon" href="./static/images/tabpic.png" type="image/png" sizes="16x16"> 
+        <link rel="stylesheet" href="./static/css/login.css">
+    </head>
+    <body>
+        <img src="./static/images/logo.png" alt="Logo">
+        <div class="form">
+            <form id="login" method="POST" action="./dynamic/php/login.php">
+                <div class="empty">
+
+                </div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="E-mail" style="margin-left: 48px;" name="email" id="emailID" required>
+                <br>
+                <br>
+                <label for="pass">Password</label>
+                <input type="password" placeholder="password" style="margin-left: 25px;" name="pass" id = "passID" required> 
+                <br>
+                <br>
+                <input type="submit" value="Login" name="login">
+            </form>
+            <p style="margin-left: 10%;">Don't have an account? <a href="Register.html">Register Here</a></p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./static//scripts/login.js"></script>
+    </body>
+</html>

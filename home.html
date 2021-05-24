@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>LinkedIn Wannabe</title>
+    <link rel="icon" href="./static/images/tabpic.png" type="image/png" sizes="16x16"> 
+    <script src="https://kit.fontawesome.com/478101b38f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/css/main.css">
+	<link rel="stylesheet" href="./static/css/home_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="topbar stick">
+		<div class="logo">
+			<a title="" href="./home.html"><img src="./static/images/logo.png" alt=""></a>
+		</div>		
+		<div  class="top">
+			<a href="./home.html" title="">Home</a>
+			&emsp;&emsp;
+			<a href="./profile_user.html" title="">Profile</a>
+			&emsp;&emsp;
+	    </div>
+    </div>
+    
+    <div class="user-info" id="post_area">
+        <h1 margin-left=5% style="margin-bottom: 60px"> <b>What's on your timeline today?</b></h1>
+        <div class="user-data" id="temp" style='margin-bottom: 80px'>
+            <br>    
+            <div class="activity">
+                <form method="post" id="form">
+                    <textarea id="msg-text-content" rows="7" placeholder="write something" cols="80" style="resize:none; background-color:black; color:white; width:600px"></textarea>
+                    <div class="attachimg">
+                        <input type="file" id="upload" accept="image/jpeg" hidden/>
+                        <label for="upload"><img src="./static/images/resources/img.png"></label>
+                        <button id="add-post" ype="submit" style="margin-top: 10px; margin-left: 10px;">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="user-info" id = "posts">
+    </div>
+
+    <button id="open-chat-btn" class="open-chat-btn" >Chat</button>
+
+    <div class="chat-popup bottom-right-fixed" id="chat-panel">
+        <form action="" class="chat-form-container">
+            <h1 class="chat-panel-title">Contacts</h1>
+            <div class="contacts" id="cnts">
+            </div>
+            <button type="button" id="close-chat-btn" class="close-chat-btn">Close</button>
+        </form>
+
+    </div>
+
+    <div id="chat-form" class="chat-form">
+        <button id="contact-title" class="contact-title transparent"></button>
+        <textarea readonly id="old-msgs-area" name="old-msgs" class="old-msgs" cols="30" rows="10"></textarea>
+        <input id="msgText" type="text" class="msg-content msg">
+        <input type="hidden" id="hidden_user_id" value=' .$_SESSION["user_id"].'>
+        <button id="send_button" type="submit" class="send-msg msg">send</button>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./static/scripts/home.js"></script>
+</body>

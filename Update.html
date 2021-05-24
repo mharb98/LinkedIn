@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Page</title>
+        <link rel="icon" href="./static/images/tabpic.png" type="image/png" sizes="16x16">
+        <link rel="stylesheet" href="./static/css/register.css"> 
+        <link rel="stylesheet" href="./static/css/main.css">
+        <link rel="stylesheet" href="./static/css/home_style.css">
+        <link rel="stylesheet" href="./static/css/edit_page.css">
+    </head>
+<body>
+
+    <div class="topbar stick">
+		    <div class="logo">
+			    <a title="" href="homepage.html"><img src="./static/images/logo.png" class="top-logo" alt=""></a>
+		    </div>		
+		    <div  class="top">
+				<a href="../../home.php" title="">Home</a>
+				&emsp;&emsp;
+				<a href="./profile_user.php" title="">Profile</a>
+				&emsp;&emsp;
+            </div>
+    </div>
+
+    <div class="page-content">
+
+    <img src="./static/images/logo.png" class="middle-page-logo" alt="Logo">
+    <div class="form">
+        
+        <table>
+            <tr>
+                <td>
+                    <label for="uname">Username</label>
+                </td>
+                <td>
+                    <input type="text" id="uname-field" placeholder="Username" name="uname">
+                </td>
+                <td>
+                    <button type="submit" id="save-uname-btn" class="save-btn">Save</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">E-mail</label>
+                </td>
+                <td>
+                    <input type="text" id="email-field" placeholder="Email" name="email">
+                </td>
+                <td>
+                    <button type="submit" id="save-email-btn" class="save-btn">Save</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pass">Password</label>
+                </td>
+                <td>
+                    <input type="password" id="password-field" placeholder="Password" name="pass"> 
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cpass">Confirm</label>
+                </td>
+                <td>
+                    <input type="password" id="cp-field" placeholder="Confirm password" name="cpass" disabled> 
+                </td>
+                <td>
+                    <button type="submit" id="save-password-btn" class="save-btn">Save</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="birthday">Birthday</label>
+                </td>
+                <td>
+                    <input type="date" id="bd-field" id="birthday" name="birthday">
+                </td>
+                <td>
+                    <button type="submit" id="save-birthday-btn" class="save-btn">Save</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="bio">Bio</label>
+                </td>
+                <td>
+                    <input type="text" id="bio-field" placeholder="New bio" id="bio" name="bio">
+                </td>
+                <td>
+                    <button type="submit" id="save-bio-btn" class="save-btn">Save</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="skill">Add skill</label>
+                </td>
+                <td>
+                    <input type="text" id="skill-field" placeholder="New skill" id="skill" name="skill">
+                </td>
+                <td>
+                    <button type="submit" id="save-skill-btn" class="save-btn">Save</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="img">Picture</label>
+                </td>
+                <td>
+                     <input type="file" id="profile-pic" name="img" accept="image/jpeg" required>
+                </td>
+                <td>
+                    <button type="submit" id="save-img-btn" class="save-btn">Save</button>
+                </td>
+            </tr>
+        </table>
+
+        <!--Importing the jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!--Importing the js file-->
+        <script src="../../static/scripts/edit_info_script.js"></script>
+      
+    </div>
+    </div>
+    
+</body>
+</html>
